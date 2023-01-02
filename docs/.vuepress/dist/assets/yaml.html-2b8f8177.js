@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-9faaa88e","path":"/yaml.html","title":"","lang":"en-US","frontmatter":{"navbar":false,"sidebar":false},"headers":[],"git":{"updatedTime":1672666378000,"contributors":[{"name":"Yves Chevallier","email":"yves.chevallier@heig-vd.ch","commits":1}]},"filePathRelative":"yaml.md"}');export{e as data};

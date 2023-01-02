@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2b463433","path":"/resume.html","title":"Yves Chevallier","lang":"en-US","frontmatter":{"navbar":false,"sidebar":false},"headers":[],"git":{"updatedTime":1672666378000,"contributors":[{"name":"Yves Chevallier","email":"yves.chevallier@heig-vd.ch","commits":1}]},"filePathRelative":"resume.md"}');export{e as data};
