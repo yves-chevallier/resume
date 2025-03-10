@@ -12,4 +12,5 @@ export default defineUserConfig({
     navbar: false, //['/', '/get-started'],
   }),
   bundler: viteBundler(),
+  base: /resume/
 })
