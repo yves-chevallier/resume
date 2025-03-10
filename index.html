@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>My Résumé | Yves Chevallier</title><meta name="description" content="Yves Chevallier">
+    <link rel="preload" href="/assets/style-DYL3pjl1.css" as="style"><link rel="stylesheet" href="/assets/style-DYL3pjl1.css">
+    <link rel="modulepreload" href="/assets/app-CFsjpRCe.js"><link rel="modulepreload" href="/assets/index.html-BO_sjb5t.js">
+    <link rel="prefetch" href="/assets/resume.html-ldWQ-Ll_.js" as="script"><link rel="prefetch" href="/assets/yaml.html-CVJfVVQS.js" as="script"><link rel="prefetch" href="/assets/404.html-CJP12qxU.js" as="script"><link rel="prefetch" href="/assets/setupDevtools-QXEOFQJV-JLNaVrEY.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container no-navbar no-sidebar external-link-icon" vp-container><!--[--><!----><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar" vp-sidebar><!----><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-home"><header class="vp-hero"><!----><h1 id="main-title">Yves Chevallier</h1><p class="vp-hero-description">Have a look at my resumé and my projects</p><p class="vp-hero-actions"><!--[--><a class="route-link auto-link vp-hero-action-button primary" href="/resume.html" aria-label="PDF"><!--[--><!--[--><!--]--><!--]-->PDF<!--[--><!--[--><!--]--><!--]--></a><a class="route-link auto-link vp-hero-action-button secondary" href="/yaml.html" aria-label="YAML"><!--[--><!--[--><!--]--><!--]-->YAML<!--[--><!--[--><!--]--><!--]--></a><!--]--></p></header><div class="vp-features"><!--[--><div class="vp-feature"><h2>Passionate, Hard worker, eager learner, very curious</h2><p></p></div><div class="vp-feature"><h2>Keen to find new challenges and good opportunities for career development.</h2><p></p></div><div class="vp-feature"><h2>Wish to never stop learning and evolving...</h2><p></p></div><!--]--></div><div vp-content><div></div></div><!--[--><div class="vp-footer" vp-footer>MIT Licensed | Copyright © HEIG-VD 2022-present</div><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-CFsjpRCe.js" defer></script>
+  </body>
+</html>

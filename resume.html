@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>Yves Chevallier | Yves Chevallier</title><meta name="description" content="Have a look at my resumé and my projects">
+    <link rel="preload" href="/assets/style-DYL3pjl1.css" as="style"><link rel="stylesheet" href="/assets/style-DYL3pjl1.css">
+    <link rel="modulepreload" href="/assets/app-CFsjpRCe.js"><link rel="modulepreload" href="/assets/resume.html-ldWQ-Ll_.js">
+    <link rel="prefetch" href="/assets/index.html-BO_sjb5t.js" as="script"><link rel="prefetch" href="/assets/yaml.html-CVJfVVQS.js" as="script"><link rel="prefetch" href="/assets/404.html-CJP12qxU.js" as="script"><link rel="prefetch" href="/assets/setupDevtools-QXEOFQJV-JLNaVrEY.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container no-navbar no-sidebar external-link-icon" vp-container><!--[--><!----><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar" vp-sidebar><!----><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-page"><!--[--><!--]--><div vp-content><!--[--><!--]--><div><h1 id="yves-chevallier" tabindex="-1"><a class="header-anchor" href="#yves-chevallier"><span>Yves Chevallier</span></a></h1><p><a href="/resume.pdf"><img src="/images/resume.png" alt="Yves Chevallier"></a></p></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="vp-meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="vp-meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: yves.chevallier@heig-vd.ch">Yves Chevallier</span><!----><!--]--><!--]--></span></div></div></footer><!----><!--[--><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-CFsjpRCe.js" defer></script>
+  </body>
+</html>
