@@ -1,33 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="generator" content="VuePress 2.0.0-beta.60">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
     <style>
       :root {
-        --c-bg: #fff;
+        --vp-c-bg: #fff;
       }
-      html.dark {
-        --c-bg: #22272e;
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
       }
-      html, body {
-        background-color: var(--c-bg);
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
       }
     </style>
     <script>
-      const userMode = localStorage.getItem('vuepress-color-scheme');
-			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
-				document.documentElement.classList.toggle('dark', true);
-			}
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
     </script>
     <title>Yves Chevallier | Yves Chevallier</title><meta name="description" content="Have a look at my resumé and my projects">
-    <link rel="preload" href="/assets/style-5963348b.css" as="style"><link rel="stylesheet" href="/assets/style-5963348b.css">
-    <link rel="modulepreload" href="/assets/app-19779782.js"><link rel="modulepreload" href="/assets/framework-96b046e1.js"><link rel="modulepreload" href="/assets/resume.html-29a22a8f.js"><link rel="modulepreload" href="/assets/resume.html-0283003f.js"><link rel="prefetch" href="/assets/index.html-33a66a02.js" as="script"><link rel="prefetch" href="/assets/yaml.html-2b8f8177.js" as="script"><link rel="prefetch" href="/assets/404.html-60b35caa.js" as="script"><link rel="prefetch" href="/assets/index.html-421116f5.js" as="script"><link rel="prefetch" href="/assets/yaml.html-215daf3b.js" as="script"><link rel="prefetch" href="/assets/404.html-46166703.js" as="script">
+    <link rel="preload" href="/assets/style-DYL3pjl1.css" as="style"><link rel="stylesheet" href="/assets/style-DYL3pjl1.css">
+    <link rel="modulepreload" href="/assets/app-mPG6s8Ym.js"><link rel="modulepreload" href="/assets/resume.html-DL1jISJI.js">
+    <link rel="prefetch" href="/assets/index.html-CrW8lq5h.js" as="script"><link rel="prefetch" href="/assets/yaml.html-BIiV42vf.js" as="script"><link rel="prefetch" href="/assets/404.html-Dt17vnIc.js" as="script"><link rel="prefetch" href="/assets/setupDevtools-QXEOFQJV-9L7mJ8rP.js" as="script">
   </head>
   <body>
-    <div id="app"><!--[--><div class="theme-container no-navbar no-sidebar"><!--[--><!----><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><!----><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="yves-chevallier" tabindex="-1"><a class="header-anchor" href="#yves-chevallier" aria-hidden="true">#</a> Yves Chevallier</h1><p><a href="/resume.pdf"><img src="/images/resume.png" alt="Yves Chevallier"></a></p></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: yves.chevallier@heig-vd.ch">Yves Chevallier</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app-19779782.js" defer></script>
+    <div id="app"><!--[--><div class="vp-theme-container no-navbar no-sidebar external-link-icon" vp-container><!--[--><!----><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar" vp-sidebar><!----><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-page"><!--[--><!--]--><div vp-content><!--[--><!--]--><div><h1 id="yves-chevallier" tabindex="-1"><a class="header-anchor" href="#yves-chevallier"><span>Yves Chevallier</span></a></h1><p><a href="/resume.pdf"><img src="/images/resume.png" alt="Yves Chevallier"></a></p></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="vp-meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="vp-meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: yves.chevallier@heig-vd.ch">Yves Chevallier</span><!----><!--]--><!--]--></span></div></div></footer><!----><!--[--><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-mPG6s8Ym.js" defer></script>
   </body>
 </html>

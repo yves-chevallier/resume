@@ -1,33 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="generator" content="VuePress 2.0.0-beta.60">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
     <style>
       :root {
-        --c-bg: #fff;
+        --vp-c-bg: #fff;
       }
-      html.dark {
-        --c-bg: #22272e;
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
       }
-      html, body {
-        background-color: var(--c-bg);
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
       }
     </style>
     <script>
-      const userMode = localStorage.getItem('vuepress-color-scheme');
-			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
-				document.documentElement.classList.toggle('dark', true);
-			}
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
     </script>
     <title>Yves Chevallier</title><meta name="description" content="Have a look at my resumé and my projects">
-    <link rel="preload" href="/assets/style-5963348b.css" as="style"><link rel="stylesheet" href="/assets/style-5963348b.css">
-    <link rel="modulepreload" href="/assets/app-19779782.js"><link rel="modulepreload" href="/assets/framework-96b046e1.js"><link rel="modulepreload" href="/assets/404.html-46166703.js"><link rel="modulepreload" href="/assets/404.html-60b35caa.js"><link rel="prefetch" href="/assets/index.html-33a66a02.js" as="script"><link rel="prefetch" href="/assets/resume.html-29a22a8f.js" as="script"><link rel="prefetch" href="/assets/yaml.html-2b8f8177.js" as="script"><link rel="prefetch" href="/assets/index.html-421116f5.js" as="script"><link rel="prefetch" href="/assets/resume.html-0283003f.js" as="script"><link rel="prefetch" href="/assets/yaml.html-215daf3b.js" as="script">
+    <link rel="preload" href="/assets/style-DYL3pjl1.css" as="style"><link rel="stylesheet" href="/assets/style-DYL3pjl1.css">
+    <link rel="modulepreload" href="/assets/app-mPG6s8Ym.js"><link rel="modulepreload" href="/assets/404.html-Dt17vnIc.js">
+    <link rel="prefetch" href="/assets/index.html-CrW8lq5h.js" as="script"><link rel="prefetch" href="/assets/resume.html-DL1jISJI.js" as="script"><link rel="prefetch" href="/assets/yaml.html-BIiV42vf.js" as="script"><link rel="prefetch" href="/assets/setupDevtools-QXEOFQJV-9L7mJ8rP.js" as="script">
   </head>
   <body>
-    <div id="app"><!--[--><div class="theme-container"><main class="page"><div class="theme-default-content"><h1>404</h1><blockquote>There&#39;s nothing here.</blockquote><a href="/" class="">Take me home</a></div></main></div><!----><!--]--></div>
-    <script type="module" src="/assets/app-19779782.js" defer></script>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-ec9917b8><main class="page" data-v-ec9917b8><div vp-content data-v-ec9917b8><h1 data-v-ec9917b8>404</h1><blockquote data-v-ec9917b8>How did we get here?</blockquote><a class="route-link" href="/" data-v-ec9917b8>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-mPG6s8Ym.js" defer></script>
   </body>
 </html>
