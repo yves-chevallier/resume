@@ -6,7 +6,7 @@ export default defineUserConfig({
   lang: 'en-US',
   port: 4000,
   title: 'Yves Chevallier',
-  description: 'Have a look at my resumé and my projects',
+  description: 'Have a look at my resumé',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
   ],
