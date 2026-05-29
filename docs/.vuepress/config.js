@@ -7,6 +7,9 @@ export default defineUserConfig({
   port: 4000,
   title: 'Yves Chevallier',
   description: 'Have a look at my resumé and my projects',
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+  ],
   theme: defaultTheme({
     //logo: 'https://vuejs.press/images/hero.png',
     navbar: false, //['/', '/get-started'],
