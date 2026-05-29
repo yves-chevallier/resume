@@ -10,6 +10,10 @@ permissions:
   pages: write
   id-token: write
 
+# Opt-in Node.js 24 pour les actions JS (sinon warning de dépréciation Node 20).
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 # Un seul déploiement Pages à la fois.
 concurrency:
   group: pages
