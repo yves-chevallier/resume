@@ -13,6 +13,7 @@ export default defineUserConfig({
   theme: defaultTheme({
     //logo: 'https://vuejs.press/images/hero.png',
     navbar: false, //['/', '/get-started'],
+    contributors: false, // pas de liste de contributeurs
   }),
   bundler: viteBundler(),
   base: '/'
