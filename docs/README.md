@@ -18,7 +18,7 @@ features:
     details: and real-time embedded systems
   - title: Curiosity as a driving force
     details: Continuously learning, experimenting and innovating
-footer: MIT Licensed | Copyright © HEIG-VD 2022-present
+footer: Copyright © HEIG-VD 2022-present
 ---
 
 <div class="home-social">
@@ -38,7 +38,7 @@ footer: MIT Licensed | Copyright © HEIG-VD 2022-present
   display: flex;
   justify-content: center;
   gap: 1.75rem;
-  margin-top: 1.5rem;
+  margin: 2.5rem 0 3rem;
 }
 .home-social a {
   display: inline-flex;
